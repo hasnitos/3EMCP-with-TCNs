@@ -3,3 +3,4 @@ data/inputs
 data/inputs/GazeCom_new_features.zip
 models.zip
 outputs.zip
+data/inputs/GazeCom_ground_truth/GazeCom_ground_truth.zip
