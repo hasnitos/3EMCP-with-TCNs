@@ -5,6 +5,11 @@ import sys
 
 from arff_helper import ArffHelper
 
+if not sys.warnoptions:
+    import warnings
+    warnings.simplefilter("default") # Change the filter in this process
+    os.environ["PYTHONWARNINGS"] = "default" # Also affect subprocesses
+
 class Annotator():
     BASEPATH = "../our_dataset_arff"
     OUTPATH  = "../our_dataset_features"
